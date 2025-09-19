@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nobel AI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+
+  <body class="bg-[#FCFCFA] text-neutral-800 overflow-x-hidden min-h-screen flex flex-col">
+    <!-- Header / Logo -->
+<!-- Header / Logo -->
+    <header class="sticky top-0 z-50 bg-[#FCFCFA] py-4 px-6 flex items-center shadow-sm">
+        <img src="logo/logo.png" alt="Nobel AI Logo" class="h-8 w-auto mr-2" />
+    </header>
+    
+
+    <!-- Chat Container -->
+    <div class="container mx-auto max-w-3xl flex-1" id="chat-container">
+      <!-- Your messages will be injected here dynamically -->
+    </div>
+
+    <!-- Input Area -->
+    <div class="fixed inset-x-0 bottom-0 flex items-center justify-center bg-[#FCFCFA] pb-6">
+      <div class="bg-white border border-neutral-200 shadow-sm px-4 py-3 rounded-2xl w-full max-w-2xl flex items-center">
+        <textarea
+          class="w-full resize-none outline-none bg-transparent text-neutral-700 placeholder-neutral-400"
+          rows="1"
+          id="input"
+          placeholder="Ask anything or @mention a Space"
+        ></textarea>
+        <button
+          id="ask"
+          class="ml-3 bg-teal-600 px-4 py-2 text-white rounded-xl hover:bg-teal-700 transition"
+        >
+          Ask
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "nobel-ai",
+  "version": "1.0.0",
+  "description": "An AI-driven conversational engine designed for seamless chat experiences.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NobelTechInnovations/nobel-AI-node.git"
+  },
+  "author": "Kartik Maandothiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NobelTechInnovations/nobel-AI-node/issues"
+  },
+  "homepage": "https://github.com/NobelTechInnovations/nobel-AI-node#readme",
+  "dependencies": {
+    "@langchain/core": "^0.3.77",
+    "@langchain/groq": "^0.2.4",
+    "@langchain/langgraph": "^0.4.9",
+    "@langchain/tavily": "^0.1.5",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.32.0"
+  }
+}
